@@ -1,61 +1,93 @@
+/* Basic Resets */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Layout */
 #container {
     display: flex;
-    flex-direction: row;
+}
+
+#menu, #content {
+    padding: 20px;
 }
 
 #menu {
     flex: 0 0 200px;
-    padding: 10px;
-}
-
-#menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#menu ul li {
-    margin: 5px 0;
-}
-
-#menu ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    display: block;
-    text-align: right;
-}
-
-#menu ul li a.active {
-    background-color: #ccc;
 }
 
 #content {
-    flex: 1 1 auto;
-    padding: 20px;
+    flex-grow: 1;
 }
 
-#contact-form input,
-#contact-form textarea,
-#contact-form button {
+/* Menu Styles */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    margin-bottom: 10px;
+}
+
+#menu a {
     display: block;
-    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    text-align: right;
 }
 
+/* Gallery */
 #gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px;
 }
 
-#gallery img {
-    width: 100%;
+/* Artwork */
+.artwork {
     height: auto;
-    border: 1px solid #ccc;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
+.artwork img {
+    max-height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.artwork figcaption {
+    width: 100%;
+    margin-top: 0;
+    color: #ABB2B9;
+    font-size: 80%;
+    font-family: arial, sans-serif;
+    text-align: right;
+    line-height: 1;
+    padding: 0;
+}
+
+.painting-name {
+    margin-bottom: 2px;
+    font-family: cursive, sans-serif;
+    font-size: 80%;
+    color: #566573;
+    text-align: right;
+}
+
+/* Picture Parameters */
+.artwork p:last-child {
+    font-size: 0.8em;
+    color: #ABB2B9;
 }
