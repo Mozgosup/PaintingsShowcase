@@ -18,21 +18,21 @@
         <h1>Featured Artworks</h1>
         <div id="gallery">
             <figure class="artwork">
-                <img src="assets/images/painting1.jpeg" alt="Painting 1">
+                <img src="assets/images/painting1.jpeg" alt="Painting 1" onclick="openModal(this.src)">
                 <figcaption>
                     <p class="painting-name">"ЭКСПРОМТ С ИРИНОЙ"</p>
                     <p>120х100, 2023</p>
                 </figcaption>
             </figure>
             <figure class="artwork">
-                <img src="assets/images/painting2.jpeg" alt="Painting 2">
+                <img src="assets/images/painting2.jpeg" alt="Painting 2" onclick="openModal(this.src)">
                 <figcaption>
                     <p class="painting-name">"ВЕРАНДА 2"</p>
                     <p>145х145, 2018-2023</p>
                 </figcaption>
             </figure>
             <figure class="artwork">
-                <img src="assets/images/painting3.jpeg" alt="Painting 3">
+                <img src="assets/images/painting3.jpeg" alt="Painting 3" onclick="openModal(this.src)">
                 <figcaption>
                     <p class="painting-name">"КРЫША. ТЮТЧЕВО."</p>
                     <p>2018, 60х70</p>
@@ -41,5 +41,10 @@
         </div>
     </div>
 </div>
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01" onclick="closeModal()">
+</div>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
