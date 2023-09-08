@@ -30,25 +30,6 @@ body {
     flex-grow: 1;
 }
 
-/* Menu Styles */
-#menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#menu li {
-    margin-bottom: 10px;
-}
-
-#menu a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    text-align: right;
-}
-
 /* Header Styles */
 #site-header {
     width: 100%;
@@ -71,39 +52,47 @@ body {
     font-weight: bold;
 }
 
+/* Menu Styles */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    margin-bottom: 10px;
+}
+
+#menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    text-align: right;
+}
+
 /* Gallery Styles */
 #gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 /* Artwork Styles */
 .artwork {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    border: none;
+    margin: 0 50px 16px 0;
 }
 
 .artwork img {
-    max-height: 100%;
-    width: 100%;
-    margin-bottom: 0;
+    height: 300px;
+    width: auto;
+    display: block;
     border-bottom: 1px solid #ccc;
 }
 
-.artwork figcaption, .painting-name {
+.artwork figcaption {
     font-family: var(--main-font);
     text-align: right;
-}
-
-.artwork figcaption {
-    width: 100%;
     margin-top: 0;
     color: var(--main-text-color);
     font-size: 80%;
@@ -112,7 +101,7 @@ body {
 }
 
 .painting-name {
-    margin-bottom: 2px;
+    margin-bottom: 0;
     font-size: 80%;
     color: var(--highlight-text-color);
 }
@@ -120,6 +109,7 @@ body {
 .artwork p:last-child {
     font-size: 0.8em;
     color: var(--main-text-color);
+    margin-top: 4px;
 }
 
 /* Modal Styles */

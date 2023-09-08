@@ -20,7 +20,7 @@ function populateGallery(paintings) {
         const img = document.createElement('img');
         img.src = painting.src;
         img.alt = painting.alt;
-        img.onclick = function() {
+        img.onclick = function () {
             openModal(painting.src);
         };
 
@@ -40,6 +40,10 @@ function populateGallery(paintings) {
         figure.appendChild(figcaption);
 
         gallery.appendChild(figure);
+
+        img.onload = function () {
+            figcaption.style.width = img.offsetWidth + "px";
+        }
     });
 }
 
