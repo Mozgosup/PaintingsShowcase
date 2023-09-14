@@ -143,3 +143,12 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+
+.painting-info {
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-family: var(--main-font);
+    text-align: right;
+}

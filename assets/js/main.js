@@ -1,7 +1,9 @@
-function openModal(src) {
+function openModal(src, name, details) {
     const modal = document.getElementById('imageModal');
     const modalImage = document.getElementById('img01');
+    const modalPaintingInfo = document.getElementById('modalPaintingInfo'); // Grab the new container
     modalImage.src = src;
+    modalPaintingInfo.innerHTML = `<strong>${name}</strong><br>${details}`; // Set the painting's name and details
 
     modalImage.onclick = function (event) {
         event.stopPropagation();
@@ -32,7 +34,7 @@ function populateGallery(paintings) {
         img.src = painting.src;
         img.alt = painting.alt;
         img.onclick = function () {
-            openModal(painting.src);
+            openModal(painting.src, painting.name, painting.details);
         };
 
         const figcaption = document.createElement('figcaption');
