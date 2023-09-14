@@ -2,6 +2,17 @@ function openModal(src) {
     const modal = document.getElementById('imageModal');
     const modalImage = document.getElementById('img01');
     modalImage.src = src;
+
+    modalImage.onclick = function (event) {
+        event.stopPropagation();
+    }
+
+    modal.onclick = function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    }
+
     modal.style.display = "block";
 }
 

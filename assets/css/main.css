@@ -2,7 +2,7 @@
 :root {
     --main-font: arial, sans-serif;
     --main-text-color: #ABB2B9;
-    --highlight-text-color: #566573;
+    --highlight-text-color: #000000;
 }
 
 /* Basic Resets */
@@ -24,9 +24,12 @@ body {
 
 #menu {
     flex: 0 0 200px;
+    border-right: 1px solid #ABB2B9;
+    padding: 70px 20px 20px 20px;
 }
 
 #content {
+    padding: 0 20px 20px 20px;
     flex-grow: 1;
 }
 
