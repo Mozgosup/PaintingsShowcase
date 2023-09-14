@@ -74,6 +74,11 @@ body {
     text-align: right;
 }
 
+.active-menu-item {
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
 /* Gallery Styles */
 #gallery {
     display: flex;

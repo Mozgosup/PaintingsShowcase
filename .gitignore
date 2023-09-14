@@ -1,3 +1,6 @@
+# IDE Configuration Files
+.idea/
+
 # Image files
 *.jpg
 *.jpeg

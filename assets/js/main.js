@@ -1,9 +1,10 @@
 function openModal(src, name, details) {
+
     const modal = document.getElementById('imageModal');
     const modalImage = document.getElementById('img01');
-    const modalPaintingInfo = document.getElementById('modalPaintingInfo'); // Grab the new container
+    const modalPaintingInfo = document.getElementById('modalPaintingInfo');
     modalImage.src = src;
-    modalPaintingInfo.innerHTML = `<strong>${name}</strong><br>${details}`; // Set the painting's name and details
+    modalPaintingInfo.innerHTML = `<strong>${name}</strong><br>${details}`;
 
     modalImage.onclick = function (event) {
         event.stopPropagation();
@@ -24,6 +25,7 @@ function closeModal() {
 }
 
 function populateGallery(paintings) {
+
     const gallery = document.getElementById('gallery');
 
     paintings.forEach((painting) => {
@@ -58,6 +60,23 @@ function populateGallery(paintings) {
             figcaption.style.width = img.offsetWidth + "px";
         }
     });
+}
+
+function changeContent(sectionId) {
+
+    const sections = document.querySelectorAll('.content-section');
+
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    document.getElementById(sectionId).style.display = 'block';
+
+    document.querySelectorAll('#menu li').forEach(item => {
+        item.classList.remove('active-menu-item');
+    });
+
+    document.getElementById(`menu-${sectionId}`).classList.add('active-menu-item');
 }
 
 fetch('assets/data/paintings.json')
