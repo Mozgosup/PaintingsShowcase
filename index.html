@@ -6,42 +6,47 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<header id="site-header">
-    <div class="header-text">LIDIA SKARGINA</div>
-</header>
-<div id="container">
-    <div id="menu">
-        <ul>
-            <li id="menu-home" class="active-menu-item">
-                <a href="#" onclick="changeContent('home')">Featured Artworks</a>
-            </li>
-            <li id="menu-about"><a href="#" onclick="changeContent('about')">About Lidia</a></li>
-            <li id="menu-contact"><a href="#" onclick="changeContent('contact')">Contact</a></li>
-        </ul>
+<div class="content-wrapper">
+    <header id="site-header">
+        <div class="header-text">LIDIA SKARGINA</div>
+    </header>
+    <div id="container">
+        <div id="menu">
+            <ul>
+                <li id="menu-home" class="active-menu-item">
+                    <a href="#" onclick="changeContent('home')">Featured Artworks</a>
+                </li>
+                <li id="menu-about"><a href="#" onclick="changeContent('about')">About Lidia</a></li>
+                <li id="menu-contact"><a href="#" onclick="changeContent('contact')">Contact</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="home" class="content-section">
+                <h1>Featured Artworks</h1>
+                <div id="gallery"></div>
+            </div>
+
+            <div id="about" class="content-section" style="display:none">
+                <h1>About Lidia</h1>
+                <p>Lidia is an accomplished artist... (your content here)</p>
+            </div>
+
+            <div id="contact" class="content-section" style="display:none">
+                <h1>Contact</h1>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: lidia@example.com</p>
+            </div>
+        </div>
     </div>
-    <div id="content">
-        <div id="home" class="content-section">
-            <h1>Featured Artworks</h1>
-            <div id="gallery"></div>
-        </div>
-
-        <div id="about" class="content-section" style="display:none">
-            <h1>About Lidia</h1>
-            <p>Lidia is an accomplished artist... (your content here)</p>
-        </div>
-
-        <div id="contact" class="content-section" style="display:none">
-            <h1>Contact</h1>
-            <p>Phone: 123-456-7890</p>
-            <p>Email: lidia@example.com</p>
-        </div>
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01" onclick="closeModal()">
+        <div class="painting-info" id="modalPaintingInfo"></div>
     </div>
 </div>
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="img01" onclick="closeModal()">
-    <div class="painting-info" id="modalPaintingInfo"></div>
-</div>
+<footer id="site-footer">
+    <div class="footer-text">© <span id="currentYear"></span> Lidia Skargina. All rights reserved.</div>
+</footer>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

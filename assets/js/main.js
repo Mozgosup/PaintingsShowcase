@@ -79,6 +79,14 @@ function changeContent(sectionId) {
     document.getElementById(`menu-${sectionId}`).classList.add('active-menu-item');
 }
 
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+document.addEventListener('contextmenu', function (event) {
+    if (event.target.tagName === 'IMG') {
+        event.preventDefault();
+    }
+});
+
 fetch('assets/data/paintings.json')
     .then(response => response.json())
     .then(data => populateGallery(data))
