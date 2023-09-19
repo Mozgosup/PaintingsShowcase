@@ -21,6 +21,7 @@ body {
 
 /* Layout */
 #container {
+    position: relative;
     display: flex;
     margin-top: 20px;
 }
@@ -81,6 +82,10 @@ body {
     text-align: right;
 }
 
+#menu a:hover {
+    text-decoration: underline;
+}
+
 .active-menu-item {
     text-decoration: underline;
     font-size: 1.1em;
@@ -91,6 +96,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 /* Artwork Styles */
@@ -103,6 +111,8 @@ body {
     width: auto;
     display: block;
     border-bottom: 1px solid #ccc;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .artwork figcaption {
@@ -173,4 +183,25 @@ body {
     padding: 10px 0;
     text-align: center;
     width: 100%;
+}
+
+/* Language Switcher Styles */
+.lang-switcher {
+    position: absolute;
+    right: 10px;
+    z-index: 1000;
+}
+
+.lang-switcher a {
+    text-decoration: none;
+    margin: 0 1px;
+    color: black;
+}
+
+.lang-switcher a:hover {
+    text-decoration: underline;
+}
+
+.lang-switcher a.active-lang {
+    text-decoration: underline;
 }

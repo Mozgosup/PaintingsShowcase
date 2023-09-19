@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate-key="title">Lidia Skargina - Featured Artworks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
 <div class="content-wrapper">
     <header id="site-header">
-        <div class="header-text">LIDIA SKARGINA</div>
+        <div class="header-text" data-translate-key="headerText">LIDIA SKARGINA</div>
     </header>
     <div id="container">
         <div id="menu">
             <ul>
                 <li id="menu-home" class="active-menu-item">
-                    <a href="#" onclick="changeContent('home')">Featured Artworks</a>
+                    <a href="#" data-translate-key="menuHome" onclick="changeContent('home')">Featured Artworks</a>
                 </li>
-                <li id="menu-about"><a href="#" onclick="changeContent('about')">About Lidia</a></li>
-                <li id="menu-contact"><a href="#" onclick="changeContent('contact')">Contact</a></li>
+                <li id="menu-about">
+                    <a href="#" data-translate-key="menuAbout" onclick="changeContent('about')">About Lidia</a>
+                </li>
+                <li id="menu-contact">
+                    <a href="#" data-translate-key="menuContact" onclick="changeContent('contact')">Contact</a>
+                </li>
             </ul>
+        </div>
+        <div class="lang-switcher">
+            <a href="javascript:void(0)" lang="en" class="active-lang" onclick="switchLanguage('en')">EN</a> |
+            <a href="javascript:void(0)" lang="ru" onclick="switchLanguage('ru')">RU</a>
         </div>
         <div id="content">
             <div id="home" class="content-section">
-                <h1>Featured Artworks</h1>
+                <h1 data-translate-key="menuHome">Featured Artworks</h1>
                 <div id="gallery"></div>
             </div>
-
             <div id="about" class="content-section" style="display:none">
-                <h1>About Lidia</h1>
-                <p>Lidia is an accomplished artist... (your content here)</p>
+                <h1 data-translate-key="menuAbout">About Lidia</h1>
+                <p data-translate-key="aboutText">Lidia is an accomplished artist... (your content here)</p>
             </div>
-
             <div id="contact" class="content-section" style="display:none">
-                <h1>Contact</h1>
-                <p>Phone: 123-456-7890</p>
-                <p>Email: lidia@example.com</p>
+                <h1 data-translate-key="menuContact">Contact</h1>
+                <p data-translate-key="contactPhone">Phone: 123-456-7890</p>
+                <p data-translate-key="contactEmail">Email: lidia@example.com</p>
             </div>
         </div>
     </div>
@@ -45,8 +54,7 @@
     </div>
 </div>
 <footer id="site-footer">
-    <div class="footer-text">© <span id="currentYear"></span> Lidia Skargina. All rights reserved.</div>
+    <div class="footer-text" data-translate-key="copyrightStatement">© <span id="currentYear"></span> Lidia Skargina. All rights reserved.</div>
 </footer>
-<script src="assets/js/main.js"></script>
 </body>
 </html>
