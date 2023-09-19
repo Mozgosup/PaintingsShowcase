@@ -15,13 +15,6 @@ function openModal(src, name, details) {
     modalImage.src = src;
     modalPaintingInfo.innerHTML = `<strong>${name}</strong><br>${details}`;
 
-    modalImage.addEventListener('click', event => event.stopPropagation());
-    modal.addEventListener('click', event => {
-        if (event.target === modal) {
-            closeModal();
-        }
-    });
-
     modal.style.display = "block";
 }
 
@@ -30,10 +23,12 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+document.getElementById('img01').addEventListener('click', function(event) {
+    event.stopPropagation();
+});
+
 function populateGallery(paintings) {
-
     const gallery = document.getElementById('gallery');
-
     gallery.innerHTML = '';
 
     paintings.forEach((painting) => {
@@ -115,27 +110,40 @@ function changeContent(sectionId) {
     document.getElementById(`menu-${sectionId}`).classList.add('active-menu-item');
 }
 
-document.addEventListener('contextmenu', function (event) {
+function fetchJSON(url) {
+    return fetch(url).then(response => response.json());
+}
+
+document.getElementById('imageModal').addEventListener('click', function(event) {
+    if (event.target === event.currentTarget) {
+        closeModal();
+    }
+});
+
+
+document.querySelectorAll('#menu a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        changeContent(this.getAttribute('data-section'));
+    });
+});
+
+document.querySelectorAll('.lang-switcher a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        switchLanguage(this.getAttribute('lang'));
+    });
+});
+
+document.addEventListener('contextmenu', function(event) {
     if (event.target.tagName === 'IMG') {
         event.preventDefault();
     }
 });
 
-fetch('assets/data/paintings.json')
-    .then(response => response.json())
-    .then(data => {
-        populateGallery(data)
-        setupObserver();
-    })
-    .catch((error) => console.error('Error:', error));
-
-let currentLanguage = 'en';
-
 function applyTranslations(translations) {
-    const translatableElements = document.querySelectorAll('[data-translate-key]');
     const currentYear = new Date().getFullYear();
-
-    translatableElements.forEach(el => {
+    document.querySelectorAll('[data-translate-key]').forEach(el => {
         const key = el.getAttribute('data-translate-key');
         if (translations[key]) {
             if (key === "copyrightStatement") {
@@ -147,28 +155,29 @@ function applyTranslations(translations) {
     });
 }
 
-
 function loadLanguage(lang) {
-    fetch(`assets/data/${lang}.json`)
-        .then(response => response.json())
+    fetchJSON(`assets/data/${lang}.json`)
         .then(data => {
             currentLanguage = lang;
             applyTranslations(data);
             setActiveLanguageClass(lang);
+            return fetchJSON('assets/data/paintings.json');
         })
-        .catch(error => console.error('Error loading language:', error));
+        .then(data => {
+            populateGallery(data);
+            setupObserver();
+        })
+        .catch(error => console.error('Error:', error));
 }
 
 function switchLanguage(lang) {
-    fetch(`assets/data/${lang}.json`)
-        .then(response => response.json())
+    fetchJSON(`assets/data/${lang}.json`)
         .then(data => {
             currentLanguage = lang;
             applyTranslations(data);
             setActiveLanguageClass(lang);
-            return fetch('assets/data/paintings.json');
+            return fetchJSON('assets/data/paintings.json');
         })
-        .then(response => response.json())
         .then(data => {
             populateGallery(data);
             setupObserver();
@@ -176,4 +185,10 @@ function switchLanguage(lang) {
         .catch((error) => console.error('Error:', error));
 }
 
-loadLanguage(currentLanguage);
+loadLanguage('en');
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        closeModal();
+    }
+});
