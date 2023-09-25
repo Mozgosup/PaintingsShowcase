@@ -37,22 +37,20 @@ body {
 }
 
 #content {
-    padding: 0 20px 20px 20px;
     flex-grow: 1;
 }
 
-/* Header Styles */
+/* Header */
 #site-header {
-    width: 100%;
-    height: 150px;
     background-image: url('/assets/images/Morning_Idyll.jpeg');
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 150px;
 }
 
 .header-text {
@@ -63,11 +61,11 @@ body {
     font-weight: bold;
 }
 
-/* Menu Styles */
+/* Menu */
 #menu ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 #menu li {
@@ -75,126 +73,125 @@ body {
 }
 
 #menu a {
-    display: block;
-    text-decoration: none;
     color: black;
+    display: block;
     padding: 10px;
     text-align: right;
+    text-decoration: none;
 }
 
-#menu a:hover {
+#menu a:hover, .active-menu-item {
     text-decoration: underline;
 }
 
 .active-menu-item {
-    text-decoration: underline;
     font-size: 1.1em;
 }
 
-/* Gallery Styles */
+/* Gallery */
 #gallery {
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    visibility: hidden;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    visibility: hidden;
 }
 
-/* Artwork Styles */
+/* Artwork */
 .artwork {
     margin: 0 50px 16px 0;
 }
 
 .artwork img {
-    height: 300px;
-    width: auto;
-    display: block;
     border-bottom: 1px solid #ccc;
+    display: block;
+    height: 300px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    width: auto;
 }
 
 .artwork figcaption {
-    font-family: var(--main-font);
-    text-align: right;
-    margin-top: 0;
     color: var(--main-text-color);
+    font-family: var(--main-font);
     font-size: 80%;
     line-height: 1;
+    margin-top: 0;
     padding: 0;
+    text-align: right;
 }
 
 .painting-name {
-    margin-bottom: 0;
-    font-size: 80%;
     color: var(--highlight-text-color);
+    font-size: 80%;
+    margin-bottom: 0;
 }
 
 .artwork p:last-child {
-    font-size: 0.8em;
     color: var(--main-text-color);
+    font-size: 0.8em;
     margin-top: 4px;
 }
 
-/* Modal Styles */
+/* Modal */
 .modal {
-    display: none;
-    justify-content: center;
     align-items: center;
-    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    height: 100%;
+    justify-content: center;
     left: 0;
+    overflow: hidden;
+    position: fixed;
     top: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow: hidden;
 }
 
 .modal-content {
+    left: 50%;
+    max-height: 90%;
+    max-width: 90%;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 90%;
-    max-height: 90%;
 }
 
 .modal-content img {
-    max-width: 100%;
     max-height: 100%;
+    max-width: 100%;
 }
 
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
     color: #fff;
+    cursor: pointer;
     font-size: 40px;
     font-weight: bold;
-    cursor: pointer;
+    position: absolute;
+    right: 35px;
+    top: 15px;
 }
 
 .painting-info {
-    color: white;
-    position: absolute;
     bottom: 15px;
-    right: 15px;
+    color: white;
     font-family: var(--main-font);
+    position: absolute;
+    right: 15px;
     text-align: right;
 }
 
-/* Footer Styles */
+/* Footer */
 #site-footer {
-    font-size: 14px;
     color: #999;
+    font-size: 14px;
     margin: 0;
     padding: 10px 0;
     text-align: center;
     width: 100%;
 }
 
-/* Language Switcher Styles */
+/* Language Switcher */
 .lang-switcher {
     position: absolute;
     right: 10px;
@@ -202,54 +199,45 @@ body {
 }
 
 .lang-switcher a {
-    text-decoration: none;
-    margin: 0 1px;
     color: black;
+    margin: 0 1px;
+    text-decoration: none;
 }
 
-.lang-switcher a:hover {
+.lang-switcher a:hover, .lang-switcher a.active-lang {
     text-decoration: underline;
 }
 
-.lang-switcher a.active-lang {
-    text-decoration: underline;
-}
-
-/* About Section Styles */
-/* Text */
+/* About Section */
 .align-right {
     font-style: italic;
     text-align: right;
 }
 
 .indented-text {
+    margin: 0.5em 0;
     text-indent: 1em;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
 }
 
-/* Image Styles */
 .image-wrapper {
     float: left;
     margin-right: 20px;
 }
 
 .biography-image {
-    width: 300px;
-    margin-bottom: 1em;
     display: block;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 100px 1em;
+    width: 300px;
 }
 
 #about #biography-container {
     padding-right: 100px;
 }
 
-/* TOC Styles */
+/* TOC */
 #toc {
-    padding: 10px;
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 #toc h3 {
@@ -263,13 +251,13 @@ body {
 }
 
 #toc ol li {
-    margin-bottom: 5px;
     font-size: 1.2em;
+    margin-bottom: 5px;
 }
 
 #toc ol li a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
 #toc ol li a:hover {
