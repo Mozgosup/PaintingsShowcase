@@ -214,3 +214,64 @@ body {
 .lang-switcher a.active-lang {
     text-decoration: underline;
 }
+
+/* About Section Styles */
+/* Text */
+.align-right {
+    font-style: italic;
+    text-align: right;
+}
+
+.indented-text {
+    text-indent: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+/* Image Styles */
+.image-wrapper {
+    float: left;
+    margin-right: 20px;
+}
+
+.biography-image {
+    width: 300px;
+    margin-bottom: 1em;
+    display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#about #biography-container {
+    padding-right: 100px;
+}
+
+/* TOC Styles */
+#toc {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#toc h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+#toc ol {
+    list-style-type: decimal;
+    padding-left: 550px;
+}
+
+#toc ol li {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+#toc ol li a {
+    text-decoration: none;
+    color: black;
+}
+
+#toc ol li a:hover {
+    text-decoration: underline;
+}

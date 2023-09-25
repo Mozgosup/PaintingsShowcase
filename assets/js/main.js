@@ -23,7 +23,7 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-document.getElementById('img01').addEventListener('click', function(event) {
+document.getElementById('img01').addEventListener('click', function (event) {
     event.stopPropagation();
 });
 
@@ -70,7 +70,7 @@ function setupObserver() {
     let allImagesLoaded = 0;
     const totalImages = document.querySelectorAll('#gallery img').length;
 
-    let observer = new IntersectionObserver(function(entries) {
+    let observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 let img = entry.target;
@@ -114,7 +114,7 @@ function fetchJSON(url) {
     return fetch(url).then(response => response.json());
 }
 
-document.getElementById('imageModal').addEventListener('click', function(event) {
+document.getElementById('imageModal').addEventListener('click', function (event) {
     if (event.target === event.currentTarget) {
         closeModal();
     }
@@ -122,20 +122,20 @@ document.getElementById('imageModal').addEventListener('click', function(event) 
 
 
 document.querySelectorAll('#menu a').forEach(link => {
-    link.addEventListener('click', function(event) {
+    link.addEventListener('click', function (event) {
         event.preventDefault();
         changeContent(this.getAttribute('data-section'));
     });
 });
 
 document.querySelectorAll('.lang-switcher a').forEach(link => {
-    link.addEventListener('click', function(event) {
+    link.addEventListener('click', function (event) {
         event.preventDefault();
         switchLanguage(this.getAttribute('lang'));
     });
 });
 
-document.addEventListener('contextmenu', function(event) {
+document.addEventListener('contextmenu', function (event) {
     if (event.target.tagName === 'IMG') {
         event.preventDefault();
     }
@@ -155,6 +155,16 @@ function applyTranslations(translations) {
     });
 }
 
+function loadBiography(lang) {
+    fetch(`assets/data/biography_${lang}.html`)
+        .then(response => response.text())
+        .then(data => {
+            const biographyContainer = document.getElementById('biography-container');
+            biographyContainer.innerHTML = data;
+        })
+        .catch(error => console.error('Error loading biography:', error));
+}
+
 function loadLanguage(lang) {
     fetchJSON(`assets/data/${lang}.json`)
         .then(data => {
@@ -166,29 +176,20 @@ function loadLanguage(lang) {
         .then(data => {
             populateGallery(data);
             setupObserver();
+            loadBiography(lang);
         })
         .catch(error => console.error('Error:', error));
 }
 
 function switchLanguage(lang) {
-    fetchJSON(`assets/data/${lang}.json`)
-        .then(data => {
-            currentLanguage = lang;
-            applyTranslations(data);
-            setActiveLanguageClass(lang);
-            return fetchJSON('assets/data/paintings.json');
-        })
-        .then(data => {
-            populateGallery(data);
-            setupObserver();
-        })
-        .catch((error) => console.error('Error:', error));
+    loadLanguage(lang);
 }
 
 loadLanguage('en');
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
     if (event.key === "Escape") {
         closeModal();
     }
 });
+
