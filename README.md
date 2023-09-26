@@ -1,19 +1,22 @@
 # Lidia Skargina's Portfolio Site
 
+Lidia Skargina's Portfolio Site is a web platform dedicated to showcasing the artwork and achievements of the artist Lidia Skargina.
+
 ## Introduction
-This website showcases the artwork and accomplishments of Lidia Skargina.
+Browse through the curated artwork, delve into Lidia's inspiring journey, or find ways to get in touch and purchase some of her masterpieces.
 
 ## Features
-* Gallery: Browse a curated collection of Lidia's work from various periods.
-* Biography: Learn about Lidia's journey and what inspires her.
-* Contacts: Ways to contact Lidia and purchase some of her paintings.
+* Gallery: Explore a handpicked collection of Lidia's artworks spanning various periods.
+* Biography: Immerse yourself in the tale of Lidia's artistic journey and the inspirations behind her creations.
+* Contacts: Discover methods to contact Lidia and acquire some of her art pieces.
 
 ## Technologies Used
-* HTML5, CSS3
+* HTML5
+* CSS3
 * JavaScript
 
 ## How to View the Site
-Visit the live site [here](https://www.lidiaskargina.com).
+For a live experience, visit [Lidia Skargina's Portfolio](https://www.lidiaskargina.com).
 
 ## Licensing
 This project is covered under multiple licenses:

@@ -14,8 +14,8 @@
     <header id="site-header">
         <div class="header-text" data-translate-key="headerText">LIDIA SKARGINA</div>
     </header>
-    <div id="container">
-        <div id="menu">
+    <main id="container">
+        <nav id="menu">
             <ul>
                 <li id="menu-home" class="active-menu-item">
                     <a href="#" data-section="home" data-translate-key="menuHome">Featured Artworks</a>
@@ -27,37 +27,37 @@
                     <a href="#" data-section="contact" data-translate-key="menuContact">Contact</a>
                 </li>
             </ul>
-        </div>
+        </nav>
         <div class="lang-switcher">
             <a href="#" lang="en" class="active-lang" data-lang="en">EN</a> |
             <a href="#" lang="ru" data-lang="ru">RU</a>
         </div>
         <div id="content">
-            <div id="home" class="content-section">
+            <section id="home" class="content-section">
                 <h1 data-translate-key="menuHome">Featured Artworks</h1>
                 <div id="gallery"></div>
-            </div>
-            <div id="about" class="content-section" style="display:none">
+            </section>
+            <section id="about" class="content-section hidden">
                 <h1 data-translate-key="menuAbout">About Lidia</h1>
                 <div class="image-wrapper"></div>
                 <div id="biography-container"></div>
-            </div>
-            <div id="contact" class="content-section" style="display:none">
+            </section>
+            <section id="contact" class="content-section hidden">
                 <h1 data-translate-key="menuContact">Contact</h1>
                 <p data-translate-key="contactPhone">Phone: 123-456-7890</p>
                 <p data-translate-key="contactEmail">Email: lidia@example.com</p>
-            </div>
+            </section>
         </div>
-    </div>
-    <div id="imageModal" class="modal" onclick="closeModal()">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div class="painting-info" id="modalPaintingInfo"></div>
-    </div>
+        <div id="imageModal" class="modal" role="dialog" aria-hidden="true">
+            <span class="close" aria-label="Close modal">&times;</span>
+            <img class="modal-content" id="img01">
+            <div class="painting-info" id="modalPaintingInfo"></div>
+        </div>
+    </main>
 </div>
 <footer id="site-footer">
-    <div class="footer-text" data-translate-key="copyrightStatement">© <span id="currentYear"></span> Lidia Skargina.
-        All rights reserved.
+    <div class="footer-text" data-translate-key="copyrightStatement">© <span id="currentYear"></span>
+        Lidia Skargina. All rights reserved.
     </div>
 </footer>
 </body>

@@ -32,24 +32,25 @@ body {
 
 #menu {
     flex: 0 0 200px;
-    border-right: 1px solid #ABB2B9;
-    padding: 70px 20px 20px 20px;
+    border-right: 1px solid var(--main-text-color);
+    padding-top: 70px;
 }
 
 #content {
     flex-grow: 1;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Header */
 #site-header {
-    background-image: url('/assets/images/Morning_Idyll.jpeg');
-    background-size: cover;
-    background-position: center;
+    background: url('/assets/images/Morning_Idyll.jpeg') center/cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 150px;
 }
 
@@ -64,8 +65,8 @@ body {
 /* Menu */
 #menu ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 #menu li {
@@ -98,7 +99,6 @@ body {
     visibility: hidden;
 }
 
-/* Artwork */
 .artwork {
     margin: 0 50px 16px 0;
 }
@@ -141,43 +141,36 @@ body {
     display: none;
     height: 100%;
     justify-content: center;
-    left: 0;
-    overflow: hidden;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
 }
 
 .modal-content {
+    position: absolute;
+    top: 50%;
     left: 50%;
     max-height: 90%;
     max-width: 90%;
-    position: absolute;
-    top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.modal-content img {
-    max-height: 100%;
-    max-width: 100%;
-}
-
 .close {
-    color: #fff;
-    cursor: pointer;
+    color: white;
     font-size: 40px;
-    font-weight: bold;
     position: absolute;
-    right: 35px;
     top: 15px;
+    right: 35px;
+    cursor: pointer;
 }
 
 .painting-info {
-    bottom: 15px;
     color: white;
     font-family: var(--main-font);
     position: absolute;
+    bottom: 15px;
     right: 15px;
     text-align: right;
 }
@@ -186,10 +179,9 @@ body {
 #site-footer {
     color: #999;
     font-size: 14px;
-    margin: 0;
-    padding: 10px 0;
     text-align: center;
     width: 100%;
+    padding: 10px 0;
 }
 
 /* Language Switcher */
