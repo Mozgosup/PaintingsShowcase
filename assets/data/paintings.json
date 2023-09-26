@@ -1,0 +1,146 @@
+[
+  {
+    "src": "../assets/images/Impromptu_with_Irina.jpeg",
+    "alt": "Impromptu with Irina",
+    "name": {
+      "en": "IMPROMTU WITH IRINA",
+      "ru": "ЭКСПРОМТ С ИРИНОЙ"
+    },
+    "details": "120х100, 2023"
+  },
+  {
+    "src": "../assets/images/Veranda_2.jpeg",
+    "alt": "Veranda 2",
+    "name": {
+      "en": "VERANDA 2",
+      "ru": "ВЕРАНДА 2"
+    },
+    "details": "120х100, 2023"
+  },
+  {
+    "src": "../assets/images/Roof_Tyutchevo.jpeg",
+    "alt": "Roof. Tyutchevo.",
+    "name": {
+      "en": "ROOF. TYUTCHEVO.",
+      "ru": "КРЫША. ТЮТЧЕВО."
+    },
+    "details": "120х100, 2023"
+  },
+  {
+    "src": "../assets/images/Landscape_on_the_Outskirts.jpeg",
+    "alt": "Landscape on the Outskirts",
+    "name": {
+      "en": "LANDSCAPE ON THE OUTSKIRTS",
+      "ru": "ПЕЙЗАЖ НА ОКРАИНЕ"
+    },
+    "details": "60x80, 2014"
+  },
+  {
+    "src": "../assets/images/Resting_Under_the_Birches.jpeg",
+    "alt": "Resting Under the Birches",
+    "name": {
+      "en": "RESTING UNDER THE BIRCHES",
+      "ru": "ОТДЫХ ПОД БЕРЕЗАМИ"
+    },
+    "details": "60x70, 2009"
+  },
+  {
+    "src": "../assets/images/Summer_Still_Life.jpeg",
+    "alt": "Summer Still Life",
+    "name": {
+      "en": "SUMMER STILL LIFE",
+      "ru": "ЛЕТНИЙ НАТЮРМОРТ"
+    },
+    "details": "100x80, 2008"
+  },
+  {
+    "src": "../assets/images/Still_Life_with_Pears.jpeg",
+    "alt": "Still Life with Pears",
+    "name": {
+      "en": "STILL LIFE WITH PEARS",
+      "ru": "НАТЮРМОРТ С ГРУШАМИ"
+    },
+    "details": "60x60, 2023"
+  },
+  {
+    "src": "../assets/images/Festive_Bouquet.jpeg",
+    "alt": "Festive Bouquet",
+    "name": {
+      "en": "FESTIVE BOUQUET",
+      "ru": "ПРАЗДНИЧНЫЙ БУКЕТ"
+    },
+    "details": "80x90, 2024"
+  },
+  {
+    "src": "../assets/images/Morning_Idyll.jpeg",
+    "alt": "Morning Idyll",
+    "name": {
+      "en": "MORNING IDYLL",
+      "ru": "УТРЕННЯЯ ИДИЛЛИЯ"
+    },
+    "details": "80x100, 2018"
+  },
+  {
+    "src": "../assets/images/Winter_Study.jpeg",
+    "alt": "Winter Study",
+    "name": {
+      "en": "WINTER STUDY",
+      "ru": "ЗИМНИЙ ЭТЮД"
+    },
+    "details": "35х51, 1986"
+  },
+  {
+    "src": "../assets/images/In_Our_Yard.jpeg",
+    "alt": "In Our Yard",
+    "name": {
+      "en": "IN OUR YARD",
+      "ru": "У НАС ВО ДВОРЕ"
+    },
+    "details": "63x84, 1997"
+  },
+  {
+    "src": "../assets/images/Monologue.jpeg",
+    "alt": "Monologue",
+    "name": {
+      "en": "MONOLOGUE",
+      "ru": "МОНОЛОГ"
+    },
+    "details": "80x50, 1979"
+  },
+  {
+    "src": "../assets/images/Landscape_in_the_Moonlight.jpeg",
+    "alt": "Landscape in the Moonlight",
+    "name": {
+      "en": "LANDSCAPE IN THE MOONLIGHT",
+      "ru": "ПЕЙЗАЖ ПРИ ЛУНЕ"
+    },
+    "details": "60x70, 2004"
+  },
+  {
+    "src": "../assets/images/Meeting_of_Angels.jpeg",
+    "alt": "Meeting of Angels",
+    "name": {
+      "en": "MEETING OF ANGELS",
+      "ru": "ВСТРЕЧА АНГЕЛОВ"
+    },
+    "details": "80x100, 2023"
+  },
+  {
+    "src": "../assets/images/Window.jpeg",
+    "alt": "Window",
+    "name": {
+      "en": "WINDOW",
+      "ru": "ОКНО"
+    },
+    "details": "100x100, 2020"
+  },
+  {
+    "src": "../assets/images/Red_Chair.jpeg",
+    "alt": "Red Chair",
+    "name": {
+      "en": "RAD CHAIR",
+      "ru": "КРАСНЫЙ СТУЛ"
+    },
+    "details": "70х80, 2023"
+  }
+]
