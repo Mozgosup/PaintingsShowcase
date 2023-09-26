@@ -3,7 +3,7 @@
     const IMAGE_MODAL = document.getElementById('imageModal');
     const MODAL_IMG = document.getElementById('img01');
     const MODAL_INFO = document.getElementById('modalPaintingInfo');
-    let currentLanguage = 'en';
+    let currentLanguage = mapToSupportedLanguage(getBrowserLanguage());
 
 // Set active language class
     function setActiveLanguageClass(lang) {
@@ -86,6 +86,17 @@
     function fetchJSON(url) {
         return fetch(url).then(response => response.json());
     }
+
+    function getBrowserLanguage() {
+        return navigator.languages && navigator.languages.length ? navigator.languages[0] : navigator.language || 'en';
+    }
+
+    function mapToSupportedLanguage(lang) {
+        const supportedLanguages = ['en', 'ru'];  // add other supported languages as needed
+        const simpleLang = lang.substr(0, 2).toLowerCase();
+        return supportedLanguages.includes(simpleLang) ? simpleLang : 'en';  // default to English if the detected language isn't supported
+    }
+
 
 // Apply translation to the page
     function applyTranslations(translations) {
