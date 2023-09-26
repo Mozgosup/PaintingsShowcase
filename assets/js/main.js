@@ -91,6 +91,7 @@
             .then(data => {
                 applyTranslations(data);
                 setActiveLanguageClass(lang);
+                currentLanguage = lang;
                 return fetchJSON('assets/data/paintings.json');
             })
             .then(populateGallery)

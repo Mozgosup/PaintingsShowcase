@@ -82,9 +82,9 @@
   },
   {
     "src": "../assets/images/Winter_Study.jpeg",
-    "alt": "Winter Study",
+    "alt": "Winter sketch",
     "name": {
-      "en": "WINTER STUDY",
+      "en": "WINTER SKETCH",
       "ru": "ЗИМНИЙ ЭТЮД"
     },
     "details": "35х51, 1986"
@@ -142,5 +142,41 @@
       "ru": "КРАСНЫЙ СТУЛ"
     },
     "details": "70х80, 2023"
+  },
+  {
+    "src": "../assets/images/Return_by_Moonlight.jpeg",
+    "alt": "Return by Moonlight",
+    "name": {
+      "en": "RETURN BY MOONLIGHT",
+      "ru": "ВОЗВРАЩЕНИЕ ПРИ ЛУНЕ"
+    },
+    "details": "50х60, 2023"
+  },
+  {
+    "src": "../assets/images/Still_Life_on_Red.jpeg",
+    "alt": "Still Life on Red",
+    "name": {
+      "en": "STILL LIFE ON RED",
+      "ru": "НАТЮРМОРТ НА КРАСНОМ"
+    },
+    "details": "60х60, 2023"
+  },
+  {
+    "src": "../assets/images/Road.jpeg",
+    "alt": "Road",
+    "name": {
+      "en": "ROAD",
+      "ru": "ДОРОГА"
+    },
+    "details": "79х94, 1999"
+  },
+  {
+    "src": "../assets/images/Dispute.jpeg",
+    "alt": "Dispute",
+    "name": {
+      "en": "DISPUTE",
+      "ru": "ДИСПУТ"
+    },
+    "details": "60x70, 2008"
   }
 ]
