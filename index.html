@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lidia Skargina's Artworks and Portfolio">
+    <title data-translate-key="title">Lidia Skargina - Featured Artworks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<div class="content-wrapper">
+    <header id="site-header">
+        <div class="header-text" data-translate-key="headerText">LIDIA SKARGINA</div>
+    </header>
+    <main id="container">
+        <nav id="menu">
+            <ul>
+                <li id="menu-home" class="active-menu-item">
+                    <a href="#" data-section="home" data-translate-key="menuHome">Featured Artworks</a>
+                </li>
+                <li id="menu-about">
+                    <a href="#" data-section="about" data-translate-key="menuAbout">About Lidia</a>
+                </li>
+                <li id="menu-contact">
+                    <a href="#" data-section="contact" data-translate-key="menuContact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="lang-switcher">
+            <a href="#" lang="en" class="active-lang" data-lang="en">EN</a> |
+            <a href="#" lang="ru" data-lang="ru">RU</a>
+        </div>
+        <div id="content">
+            <section id="home" class="content-section">
+                <h1 data-translate-key="menuHome">Featured Artworks</h1>
+                <div id="gallery"></div>
+            </section>
+            <section id="about" class="content-section hidden">
+                <h1 data-translate-key="menuAbout">About Lidia</h1>
+                <div class="image-wrapper"></div>
+                <div id="biography-container"></div>
+            </section>
+            <section id="contact" class="content-section hidden">
+                <h1 data-translate-key="menuContact">Contact</h1>
+                <p data-translate-key="contactIntro"></p>
+                <p><strong><span data-translate-key="contactFacebookLabel">Facebook: </span></strong><a
+                        href="https://www.facebook.com/lidia.skargina" target="_blank" rel="noopener noreferrer"
+                        data-translate-key="contactFacebookLink"></a></p>
+                <p><strong><span data-translate-key="contactPhoneLabel">Phone: </span></strong><span
+                        data-translate-key="contactPhoneNumber"></span></p>
+                <p><strong><span data-translate-key="contactEmailLabel">Email: </span></strong><a
+                        href="mailto:lskargina@list.ru"
+                        data-translate-key="contactEmailLink"></a>
+                </p>
+            </section>
+        </div>
+        <div id="imageModal" class="modal" role="dialog" aria-hidden="true">
+            <span class="close" aria-label="Close modal">&times;</span>
+            <img class="modal-content" id="img01">
+            <div class="painting-info" id="modalPaintingInfo"></div>
+        </div>
+    </main>
+</div>
+<footer id="site-footer">
+    <div class="footer-text" data-translate-key="copyrightStatement">© <span id="currentYear"></span>
+        Lidia Skargina. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>
