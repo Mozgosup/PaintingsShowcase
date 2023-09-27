@@ -1,13 +1,2 @@
 # IDE Configuration Files
 .idea/
-
-# Image files
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.svg
-*.bmp
-*.tiff
-*.ico
-*.webp
