@@ -5,11 +5,11 @@
   "menuAbout": "О Лидии",
   "menuContact": "Контакты",
   "contactIntro": "Если хотите приобрести работы Лидии или просто пообщаться:",
-  "contactFacebookLabel": "Facebook:",
+  "contactFacebookLabel": "Facebook: ",
   "contactFacebookLink": "https://www.facebook.com/lidia.skargina",
-  "contactEmailLabel": "Эл.почта:",
+  "contactEmailLabel": "Эл.почта: ",
   "contactEmailLink": "lskargina@list.ru",
-  "contactPhoneLabel": "Телефон:",
+  "contactPhoneLabel": "Телефон: ",
   "contactPhoneNumber": "+7 (903) 864-99-08",
   "copyrightStatement": "© {year} Лидия Скаргина. Все права защищены."
 }
