@@ -46,7 +46,8 @@ body {
 
 /* Header */
 #site-header {
-    background: url('/assets/images/gallery/Morning_Idyll.jpeg') center/cover;
+    background: url('/assets/images/gallery/Morning_Idyll.jpeg') center/cover no-repeat;
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
@@ -60,6 +61,18 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 15px;
     font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 1.5em;
+        letter-spacing: 7px;
+    }
+
+    #site-header {
+        height: 75px;
+    }
 }
 
 /* Menu */
