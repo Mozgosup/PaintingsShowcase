@@ -216,15 +216,6 @@
     "details": "79x86, 2009"
   },
   {
-    "src": "../assets/images/gallery/April_Birches.jpg",
-    "alt": "April_Birches",
-    "name": {
-      "en": "APRIL. BIRCHES",
-      "ru": "АПРЕЛЬ. БЕРЁЗЫ"
-    },
-    "details": "79x86, 2009"
-  },
-  {
     "src": "../assets/images/gallery/White_cloud.jpg",
     "alt": "White_cloud",
     "name": {
@@ -303,25 +294,8 @@
       "en": "GRACES",
       "ru": "ГРАЦИИ"
     },
-    "details": "60x75, 2011"
-  },
-  {
-    "src": "../assets/images/gallery/Graces.jpg",
-    "alt": "Graces",
-    "name": {
-      "en": "GRACES",
-      "ru": "ГРАЦИИ"
-    },
     "details": "80x85, 1995"
   },
-  {
-    "src": "../assets/images/gallery/Graces_2.jpg",
-    "alt": "Graces_2",
-    "name": {
-      "en": "GRACES 2",
-      "ru": "ГРАЦИИ 2"
-    },
-    "details": "60x75, 2011"
   },
   {
     "src": "../assets/images/gallery/Graces_2.jpg",
@@ -337,7 +311,7 @@
     "alt": "Road_2",
     "name": {
       "en": "ROAD 2",
-      "ru": "Дорога 2"
+      "ru": "ДОРОГА 2"
     },
     "details": "50x60, 2012"
   },
