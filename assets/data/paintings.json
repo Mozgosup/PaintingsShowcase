@@ -178,5 +178,213 @@
       "ru": "ДИСПУТ"
     },
     "details": "60x70, 2008"
+  },
+  {
+    "src": "../assets/images/gallery/southern_landscape.jpg",
+    "alt": "Southern_landscape",
+    "name": {
+      "en": "SOUTHERN LANDSCAPE",
+      "ru": "ЮЖНЫЙ ПЕЙЗАЖ"
+    },
+    "details": "60x100, 1990"
+  },
+  {
+    "src": "../assets/images/gallery/Morning_tea.jpg",
+    "alt": "Morning_tea",
+    "name": {
+      "en": "MORNING TEA",
+      "ru": "УТРЕННИЙ ЧАЙ"
+    },
+    "details": "97x118, 1998"
+  },
+  {
+    "src": "../assets/images/gallery/Landscape_in_Kuleshovka.jpg",
+    "alt": "Landscape_in_Kuleshovka",
+    "name": {
+      "en": "LANDSCAPE IN KULESHOVKA",
+      "ru": "ПЕЙЗАЖ В КУЛЕШОВКЕ"
+    },
+    "details": "80x90, 2006"
+  },
+  {
+    "src": "../assets/images/gallery/April_Birches.jpg",
+    "alt": "April_Birches",
+    "name": {
+      "en": "APRIL. BIRCHES",
+      "ru": "АПРЕЛЬ. БЕРЁЗЫ"
+    },
+    "details": "79x86, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/April_Birches.jpg",
+    "alt": "April_Birches",
+    "name": {
+      "en": "APRIL. BIRCHES",
+      "ru": "АПРЕЛЬ. БЕРЁЗЫ"
+    },
+    "details": "79x86, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/White_cloud.jpg",
+    "alt": "White_cloud",
+    "name": {
+      "en": "WHITE CLOUD",
+      "ru": "БЕЛОЕ ОБЛАКО"
+    },
+    "details": "80x90, 2010"
+  },
+  {
+    "src": "../assets/images/gallery/White_table.jpg",
+    "alt": "White_table",
+    "name": {
+      "en": "WHITE TABLE",
+      "ru": "БЕЛЫЙ СТОЛ"
+    },
+    "details": "80x90, 2007"
+  },
+  {
+    "src": "../assets/images/gallery/Visiting_vermeer.jpg",
+    "alt": "Visiting_vermeer",
+    "name": {
+      "en": "VISITING VERMEER",
+      "ru": "В ГОСТЯХ У ВЕРМЕЕРА"
+    },
+    "details": "80x100, 2010"
+  },
+  {
+    "src": "../assets/images/gallery/Evening_cloud.jpg",
+    "alt": "Evening_cloud",
+    "name": {
+      "en": "EVENING CLOUD",
+      "ru": "ВЕЧЕРНЕЕ ОБЛАКО"
+    },
+    "details": "80x90, 2010"
+  },
+  {
+    "src": "../assets/images/gallery/Evening_melody.jpg",
+    "alt": "Evening_melody",
+    "name": {
+      "en": "EVENING MELODY",
+      "ru": "ВЕЧЕРНЯЯ МЕЛОДИЯ"
+    },
+    "details": "84x100, 2004"
+  },
+  {
+    "src": "../assets/images/gallery/Blue_vase.jpg",
+    "alt": "Blue_vase",
+    "name": {
+      "en": "BLUE VASE",
+      "ru": "ГОЛУБАЯ ВАЗА"
+    },
+    "details": "80x90, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Horizontal_with_sunflowers.jpg",
+    "alt": "Horizontal_with_sunflowers",
+    "name": {
+      "en": "HORIZONTAL WITH SUNFLOWERS",
+      "ru": "ГОРИЗОНТАЛЬ С ПОДСОЛНУХАМИ"
+    },
+    "details": "60x120, 2012"
+  },
+  {
+    "src": "../assets/images/gallery/Guests_from_Macedonia.jpg",
+    "alt": "Guests_from_Macedonia",
+    "name": {
+      "en": "GUESTS FROM MACEDONIA",
+      "ru": "ГОСТИ ИЗ МАКЕДОНИИ"
+    },
+    "details": "80x90, 1999"
+  },
+  {
+    "src": "../assets/images/gallery/Graces.jpg",
+    "alt": "Graces",
+    "name": {
+      "en": "GRACES",
+      "ru": "ГРАЦИИ"
+    },
+    "details": "60x75, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Graces.jpg",
+    "alt": "Graces",
+    "name": {
+      "en": "GRACES",
+      "ru": "ГРАЦИИ"
+    },
+    "details": "80x85, 1995"
+  },
+  {
+    "src": "../assets/images/gallery/Graces_2.jpg",
+    "alt": "Graces_2",
+    "name": {
+      "en": "GRACES 2",
+      "ru": "ГРАЦИИ 2"
+    },
+    "details": "60x75, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Graces_2.jpg",
+    "alt": "Graces_2",
+    "name": {
+      "en": "GRACES 2",
+      "ru": "ГРАЦИИ 2"
+    },
+    "details": "60x75, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Road_2.jpg",
+    "alt": "Road_2",
+    "name": {
+      "en": "ROAD 2",
+      "ru": "Дорога 2"
+    },
+    "details": "50x60, 2012"
+  },
+  {
+    "src": "../assets/images/gallery/Duet_with_grandmother.jpg",
+    "alt": "Duet_with_grandmother",
+    "name": {
+      "en": "DUET WITH GRANDMOTHER",
+      "ru": "ДУЭТ С БАБУШКОЙ"
+    },
+    "details": "110x120, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Green_cup.jpg",
+    "alt": "Green_cup",
+    "name": {
+      "en": "GREEN CUP",
+      "ru": "ЗЕЛЁНАЯ ЧАШКА"
+    },
+    "details": "45x50, 2010"
+  },
+  {
+    "src": "../assets/images/gallery/Checkers_game.jpg",
+    "alt": "Checkers_game",
+    "name": {
+      "en": "CHECKERS GAME",
+      "ru": "ИГРА В ШАШКИ"
+    },
+    "details": "80x90, 2006"
+  },
+  {
+    "src": "../assets/images/gallery/Playing_with_light.jpg",
+    "alt": "Playing_with_light",
+    "name": {
+      "en": "PLAYING WITH LIGHT",
+      "ru": "ИГРА СО СВЕТОМ"
+    },
+    "details": "60x120, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Walking_with_flowers.jpg",
+    "alt": "Walking_with_flowers",
+    "name": {
+      "en": "WALKING WITH FLOWERS",
+      "ru": "ИДУЩИЕ МИМО"
+    },
+    "details": "100x60, 2011"
   }
+  
 ]
