@@ -216,15 +216,6 @@
     "details": "79x86, 2009"
   },
   {
-    "src": "../assets/images/gallery/April_Birches.jpg",
-    "alt": "April_Birches",
-    "name": {
-      "en": "APRIL. BIRCHES",
-      "ru": "АПРЕЛЬ. БЕРЁЗЫ"
-    },
-    "details": "79x86, 2009"
-  },
-  {
     "src": "../assets/images/gallery/White_cloud.jpg",
     "alt": "White_cloud",
     "name": {
@@ -295,15 +286,6 @@
       "ru": "ГОСТИ ИЗ МАКЕДОНИИ"
     },
     "details": "80x90, 1999"
-  },
-  {
-    "src": "../assets/images/gallery/Graces.jpg",
-    "alt": "Graces",
-    "name": {
-      "en": "GRACES",
-      "ru": "ГРАЦИИ"
-    },
-    "details": "60x75, 2011"
   },
   {
     "src": "../assets/images/gallery/Graces.jpg",
