@@ -261,10 +261,10 @@
     "details": "84x100, 2004"
   },
   {
-    "src": "../assets/images/gallery/Blue_vase.jpg",
-    "alt": "Blue_vase",
+    "src": "../assets/images/gallery/Light_blue_vase.jpg",
+    "alt": "Light_blue_vase",
     "name": {
-      "en": "BLUE VASE",
+      "en": "LIGHT BLUE VASE",
       "ru": "ГОЛУБАЯ ВАЗА"
     },
     "details": "80x90, 2011"
@@ -358,6 +358,222 @@
       "ru": "ИДУЩИЕ МИМО"
     },
     "details": "100x60, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Simple_plot.jpg",
+    "alt": "Simple_plot",
+    "name": {
+      "en": "SIMPLE PLOT",
+      "ru": "ПРОСТОЙ СЮЖЕТ"
+    },
+    "details": "145x150, 2010"
+  },
+  {
+    "src": "../assets/images/gallery/Pink_sky.jpg",
+    "alt": "Pink_sky",
+    "name": {
+      "en": "PINK SKY",
+      "ru": "РОЗОВОЕ НЕБО"
+    },
+    "details": "80x90, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Pink_poppies.jpg",
+    "alt": "Pink_poppies",
+    "name": {
+      "en": "PINK POPPIES",
+      "ru": "РОЗОВЫЕ МАКИ"
+    },
+    "details": "80x100, 2010"
+  },
+  {
+    "src": "../assets/images/gallery/Pink_evening.jpg",
+    "alt": "Pink_evening",
+    "name": {
+      "en": "PINK EVENING",
+      "ru": "РОЗОВЫЙ ВЕЧЕР"
+    },
+    "details": "80x90, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Still_life_with_tulips.jpg",
+    "alt": "Still_life_with_tulips",
+    "name": {
+      "en": "STILL LIFE WITH TULIPS",
+      "ru": "НАТЮРМОРТ С ТЮЛЬПАНАМИ"
+    },
+    "details": "60x70, 2007"
+  },
+  {
+    "src": "../assets/images/gallery/Gray_still_life.jpg",
+    "alt": "Gray_still_life",
+    "name": {
+      "en": "GREY STILL LIFE",
+      "ru": "СЕРЫЙ НАТЮРМОРТ"
+    },
+    "details": "80x90, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Sitting_at_the_table.jpg",
+    "alt": "Sitting_at_the_table",
+    "name": {
+      "en": "SITTING AT THE TABLE",
+      "ru": "СИДЯЩИЕ ЗА СТОЛОМ"
+    },
+    "details": "60x70, 2010"
+  },
+  {
+    "src": "../assets/images/gallery/Blue_vase.jpg",
+    "alt": "Blue_vase",
+    "name": {
+      "en": "BLUE VASE",
+      "ru": "СИНЯЯ ВАЗА"
+    },
+    "details": "80x90, 1997"
+  },
+  {
+    "src": "../assets/images/gallery/Looking_to_the_sky.jpg",
+    "alt": "Looking_to_the_sky",
+    "name": {
+      "en": "LOOKING TO THE SKY",
+      "ru": "СМОТРЯЩИЕ В НЕБО"
+    },
+    "details": "80x120, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Looking_to_the_sky.jpg",
+    "alt": "Looking_to_the_sky",
+    "name": {
+      "en": "LOOKING TO THE SKY",
+      "ru": "СМОТРЯЩИЕ В НЕБО"
+    },
+    "details": "80x120, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Looking_to_the_sky_2.jpg",
+    "alt": "Looking_to_the_sky_2",
+    "name": {
+      "en": "LOOKING TO THE SKY 2",
+      "ru": "СМОТРЯЩИЕ В НЕБО 2"
+    },
+    "details": "145x150, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Old_garden.jpg",
+    "alt": "Old_garden",
+    "name": {
+      "en": "OLD GARDEN",
+      "ru": "СТАРЫЙ САД"
+    },
+    "details": "60x70, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Standing_by_the_window.jpg",
+    "alt": "Standing_by_the_window",
+    "name": {
+      "en": "STANDING BY THE WINDOW",
+      "ru": "СТОЯЩИЕ У ОКНА"
+    },
+    "details": "90x80, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Scene_from_a_play_or_figures_in_red.jpg",
+    "alt": "Scene_from_a_play_or_figures_in_red",
+    "name": {
+      "en": "SCENE FROM A PLAY OR FIGURES IN RED",
+      "ru": "СЦЕНА ИЗ СПЕКТАКЛЯ ИЛИ ФИГУРЫ В КРАСНОМ"
+    },
+    "details": "80x90, 2002"
+  },
+  {
+    "src": "../assets/images/gallery/Reading_the_letter.jpg",
+    "alt": "Reading_the_letter",
+    "name": {
+      "en": "READING THE LETTER",
+      "ru": "ЧИТАЮЩИЕ ПИСЬМО"
+    },
+    "details": "80x90, 1998"
+  },
+  {
+    "src": "../assets/images/gallery/English_lesson.jpg",
+    "alt": "English_lesson",
+    "name": {
+      "en": "ENGLISH LESSON",
+      "ru": "УРОК АНГЛИЙСКОГО"
+    },
+    "details": "80x100, 1998"
+  },
+  {
+    "src": "../assets/images/gallery/Flowers_and_vases.jpg",
+    "alt": "Flowers_and_vases",
+    "name": {
+      "en": "FLOWERS AND VASES",
+      "ru": "ЦВЕТЫ И ВАЗЫ"
+    },
+    "details": "100x110, 2004"
+  },
+  {
+    "src": "../assets/images/gallery/Flowers_on_red.jpg",
+    "alt": "Flowers_on_red",
+    "name": {
+      "en": "FLOWERS ON RED",
+      "ru": "ЦВЕТЫ НА КРАСНОМ"
+    },
+    "details": "60x70, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Flowers_on_red_2.jpg",
+    "alt": "Flowers_on_red_2",
+    "name": {
+      "en": "FLOWERS ON RED 2",
+      "ru": "ЦВЕТЫ НА КРАСНОМ 2"
+    },
+    "details": "70x70, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Tea_party.jpg",
+    "alt": "Tea_party",
+    "name": {
+      "en": "TEA PARTY",
+      "ru": "ЧАЕПИТИЕ"
+    },
+    "details": "50x60, 1991"
+  },
+  {
+    "src": "../assets/images/gallery/Study_with_tansy.jpg",
+    "alt": "Study_with_tansy",
+    "name": {
+      "en": "STUDY WITH TANSY",
+      "ru": "ЭТЮД С ПИЖМОЙ"
+    },
+    "details": "60x65, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Yura.jpg",
+    "alt": "Yura",
+    "name": {
+      "en": "YURA",
+      "ru": "ЮРА"
+    },
+    "details": "62x62, 1972"
+  },
+  {
+    "src": "../assets/images/gallery/Yura_2.jpg",
+    "alt": "Yura_2",
+    "name": {
+      "en": "YURA",
+      "ru": "ЮРА"
+    },
+    "details": "75x50, 1973"
+  },
+  {
+    "src": "../assets/images/gallery/Apple.jpg",
+    "alt": "Apple",
+    "name": {
+      "en": "APPLE",
+      "ru": "ЯБЛОКО"
+    },
+    "details": "80x90, 2004"
   }
   
 ]
