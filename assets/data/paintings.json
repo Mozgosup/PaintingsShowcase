@@ -360,24 +360,6 @@
     "details": "100x60, 2011"
   },
   {
-    "src": "../assets/images/gallery/Simple_plot.jpg",
-    "alt": "Simple_plot",
-    "name": {
-      "en": "SIMPLE PLOT",
-      "ru": "ПРОСТОЙ СЮЖЕТ"
-    },
-    "details": "145x150, 2010"
-  },
-  {
-    "src": "../assets/images/gallery/Pink_sky.jpg",
-    "alt": "Pink_sky",
-    "name": {
-      "en": "PINK SKY",
-      "ru": "РОЗОВОЕ НЕБО"
-    },
-    "details": "80x90, 2009"
-  },
-  {
     "src": "../assets/images/gallery/Pink_poppies.jpg",
     "alt": "Pink_poppies",
     "name": {
@@ -414,15 +396,6 @@
     "details": "80x90, 2009"
   },
   {
-    "src": "../assets/images/gallery/Sitting_at_the_table.jpg",
-    "alt": "Sitting_at_the_table",
-    "name": {
-      "en": "SITTING AT THE TABLE",
-      "ru": "СИДЯЩИЕ ЗА СТОЛОМ"
-    },
-    "details": "60x70, 2010"
-  },
-  {
     "src": "../assets/images/gallery/Blue_vase.jpg",
     "alt": "Blue_vase",
     "name": {
@@ -430,15 +403,6 @@
       "ru": "СИНЯЯ ВАЗА"
     },
     "details": "80x90, 1997"
-  },
-  {
-    "src": "../assets/images/gallery/Looking_to_the_sky.jpg",
-    "alt": "Looking_to_the_sky",
-    "name": {
-      "en": "LOOKING TO THE SKY",
-      "ru": "СМОТРЯЩИЕ В НЕБО"
-    },
-    "details": "80x120, 2011"
   },
   {
     "src": "../assets/images/gallery/Looking_to_the_sky.jpg",
