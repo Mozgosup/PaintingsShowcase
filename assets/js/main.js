@@ -162,6 +162,13 @@
                 changeContent(event.target.getAttribute('data-section'));
             }
         });
+        document.getElementById('menu').addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        }, {passive: false});
+
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            this.classList.toggle("opened");
+        });
         document.querySelector('.lang-switcher').addEventListener('click', (event) => {
             event.preventDefault();
             if (event.target.tagName === 'A') {
@@ -176,6 +183,16 @@
         document.addEventListener('contextmenu', (event) => {
             if (event.target.tagName === 'IMG') {
                 event.preventDefault();
+            }
+        });
+        const menuButton = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active'); // hide the menu
+            } else {
+                menu.classList.add('active'); // show the menu
             }
         });
     });
