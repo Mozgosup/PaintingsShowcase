@@ -102,6 +102,9 @@
     // --------------------- Event Handlers ---------------------
 
     function openModal(src, name = '', details = '') {
+        if (window.innerWidth <= 768) {
+            return;
+        }
         MODAL_IMG.src = src;
         MODAL_INFO.innerHTML = `<strong>${name}</strong><br>${details}`;
         IMAGE_MODAL.style.display = "block";
