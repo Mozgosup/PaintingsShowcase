@@ -3,6 +3,11 @@
     --main-font: arial, sans-serif;
     --gray-color: #ABB2B9;
     --highlight-text-color: #000000;
+    --zindex-header: 1005;
+    --zindex-menu: 1001;
+    --zindex-toggle: 1002;
+    --hamburger-color: #333;
+    --transition-standard: all 0.3s;
 }
 
 /* Basic Resets */
@@ -67,7 +72,7 @@ body {
 
 /* Menu */
 #menu {
-    flex: 0 0 120px;
+    flex: 0 0 200px;
     border-right: 1px solid var(--gray-color);
     padding-top: 70px;
     top: 150px;
@@ -99,9 +104,6 @@ body {
     display: block;
     padding: 10px;
     text-decoration: none;
-}
-
-#menu a {
     text-align: right;
 }
 
@@ -266,7 +268,6 @@ body {
 
 #toc ol {
     list-style-type: decimal;
-    /*padding-left: 550px;*/
 }
 
 #toc ol li {
@@ -288,15 +289,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* Common Variables */
-    :root {
-        --zindex-header: 1005;
-        --zindex-menu: 1001;
-        --zindex-toggle: 1002;
-        --hamburger-color: #333;
-        --transition-standard: all 0.3s;
-    }
-
     /* Header */
     .header-text {
         font-size: 1.5em;
@@ -471,5 +463,18 @@ body {
         width: auto;
         object-fit: cover;
         display: block;
+    }
+
+    #about #biography-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .content-section h1 {
+        padding-left: 10px;
+    }
+
+    .contact-section {
+        padding: 0 10px;
     }
 }
