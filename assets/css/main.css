@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --main-font: arial, sans-serif;
+    --main-font: roboto, arial, sans-serif;
     --gray-color: #ABB2B9;
     --highlight-text-color: #000000;
     --zindex-header: 1005;
@@ -121,13 +121,13 @@ body {
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
-    opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    visibility: hidden;
 }
 
 .artwork {
     margin: 0 50px 16px 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .artwork img {
@@ -255,6 +255,10 @@ body {
     padding-right: 100px;
 }
 
+#contact h1 {
+    padding-right: 0;
+}
+
 /* TOC */
 #toc {
     margin-bottom: 20px;
@@ -371,7 +375,6 @@ body {
         display: block;
         position: absolute;
         top: 0;
-        left: 10px;
         z-index: var(--zindex-toggle);
     }
 
