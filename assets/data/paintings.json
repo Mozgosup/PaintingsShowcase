@@ -36,11 +36,11 @@
     "details": "60x80, 2014"
   },
   {
-    "src": "../assets/images/gallery/Resting_Under_the_Birches.jpeg",
-    "alt": "Resting Under the Birches",
+    "src": "../assets/images/gallery/Resting_Under_the_Birches_2.jpeg",
+    "alt": "Resting Under the Birches_2",
     "name": {
-      "en": "RESTING UNDER THE BIRCHES",
-      "ru": "ОТДЫХ ПОД БЕРЕЗАМИ"
+      "en": "RESTING UNDER THE BIRCHES 2",
+      "ru": "ОТДЫХ ПОД БЕРЕЗАМИ 2"
     },
     "details": "60x70, 2009"
   },
@@ -538,6 +538,278 @@
       "ru": "ЯБЛОКО"
     },
     "details": "80x90, 2004"
+  },
+  {
+    "src": "../assets/images/gallery/Red_phone.jpg",
+    "alt": "Red_phone",
+    "name": {
+      "en": "RED PHONE",
+      "ru": "КРАСНЫЙ ТЕЛЕФОН"
+    },
+    "details": "86x90, 2005"
+  },
+  {
+    "src": "../assets/images/gallery/Lyubets.jpg",
+    "alt": "Lyubets",
+    "name": {
+      "en": "LYUBETS",
+      "ru": "ЛЮБЕЦ"
+    },
+    "details": "60x70, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Still_life_with_white_chair.jpg",
+    "alt": "Still life with white chair",
+    "name": {
+      "en": "STILL LIFE WITH WHITE CHAIR",
+      "ru": "НАТЮРМОРТ С БЕЛЫМ СТУЛОМ"
+    },
+    "details": "80x90, 2010"
+  },
+  {
+    "src": "../assets/images/gallery/Still_life_with_red_chair.jpg",
+    "alt": "Still life with red chair",
+    "name": {
+      "en": "STILL LIFE WITH RED CHAIR",
+      "ru": "НАТЮРМОРТ С КРАСНЫМ СТУЛОМ"
+    },
+    "details": "80x90, 2000"
+  },
+  {
+    "src": "../assets/images/gallery/Sunflowers.jpg",
+    "alt": "Sunflowers",
+    "name": {
+      "en": "SUNFLOWERS",
+      "ru": "ПОДСОЛНУХИ"
+    },
+    "details": "80x90, 1997"
+  },
+  {
+    "src": "../assets/images/gallery/Resting_Under_the_Birches.jpg",
+    "alt": "Resting Under the Birches",
+    "name": {
+      "en": "RESTING UNDER THE BIRCHES",
+      "ru": "ОТДЫХ ПОД БЕРЕЗАМИ "
+    },
+    "details": "80x85, 1995"
+  },
+  {
+    "src": "../assets/images/gallery/Landscape_with_red_field.jpg",
+    "alt": "Landscape with red field",
+    "name": {
+      "en": "LANDSCAPE WITH RED FIELD",
+      "ru": "ПЕЙЗАЖ С КРАСНЫМ ПОЛЕМ"
+    },
+    "details": "80x90, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Wildflowers.jpg",
+    "alt": "Wildflowers",
+    "name": {
+      "en": "WILDFLOWERS",
+      "ru": "ПОЛЕВЫЕ ЦВЕТЫ"
+    },
+    "details": "70x50, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Items.jpg",
+    "alt": "Items",
+    "name": {
+      "en": "ITEMS",
+      "ru": "ПРЕДМЕТЫ"
+    },
+    "details": "60x80, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Irises.jpg",
+    "alt": "Irises",
+    "name": {
+      "en": "IRISES",
+      "ru": "ИРИСЫ"
+    },
+    "details": "80x60, 1997"
+  },
+  {
+    "src": "../assets/images/gallery/Red_evening.jpg",
+    "alt": "Red evening",
+    "name": {
+      "en": "RED EVENING",
+      "ru": "КРАСНЫЙ ВЕЧЕР"
+    },
+    "details": "80x90, 2002"
+  },
+  {
+    "src": "../assets/images/gallery/Ledyaykina.jpg",
+    "alt": "Ledyaykina",
+    "name": {
+      "en": "LEDYAYKINA",
+      "ru": "ЛЕДЯЙКИНА"
+    },
+    "details": "75x50, 1979"
+  },
+  {
+    "src": "../assets/images/gallery/Summer_still_life.jpg",
+    "alt": "Summer still life",
+    "name": {
+      "en": "SUMMER STILL LIFE",
+      "ru": "ЛЕТНИЙ ПЕЙЗАЖ"
+    },
+    "details": "90x60, 1995"
+  },
+  {
+    "src": "../assets/images/gallery/Lyubets_lane.jpg",
+    "alt": "Lyubets lane",
+    "name": {
+      "en": "LYUBETS LANE",
+      "ru": "ЛЮБЕЦ, ПЕРЕУЛОК"
+    },
+    "details": "60x70, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Poppies.jpg",
+    "alt": "Poppies",
+    "name": {
+      "en": "POPPIES",
+      "ru": "МАКИ"
+    },
+    "details": "90x120, 1987"
+  },
+  {
+    "src": "../assets/images/gallery/Rain_in_lyubets.jpg",
+    "alt": "Rain in Lyubets",
+    "name": {
+      "en": "RAIN IN LYUBETS",
+      "ru": "ЛЮБЕЦ, ДОЖДЬ"
+    },
+    "details": "60x70, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Lyubets_the_house_across.jpg",
+    "alt": "Lyubets, the house across",
+    "name": {
+      "en": "LYUBETS, THE HOUSE ACROSS",
+      "ru": "ЛЮБЕЦ, ДОМ НАПРОТИВ"
+    },
+    "details": "60x70, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Still_life_with_a_yellow_vase.jpg",
+    "alt": "Still life with a yellow vase",
+    "name": {
+      "en": "STILL LIFE WITH A YELLOW VASE",
+      "ru": "НАТЮРМОРТ С ЖЕЛТОЙ ВАЗОЙ"
+    },
+    "details": "80x90, 1998"
+  },
+  {
+    "src": "../assets/images/gallery/Still_life_with_watermelons.jpg",
+    "alt": "Still life with watermelons",
+    "name": {
+      "en": "STILL LIFE WITH WATERMELONS",
+      "ru": "НАТЮРМОРТ С АРБУЗАМИ"
+    },
+    "details": "80x90, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Still_life_with_pink_poppies.jpg",
+    "alt": "Still life with pink poppies",
+    "name": {
+      "en": "STILL LIFE WITH PINK POPPIES",
+      "ru": "НАТЮРМОРТ С РОЗОВЫМИ МАКАМИ"
+    },
+    "details": "90x100, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Window_2.jpg",
+    "alt": "Window 2",
+    "name": {
+      "en": "WINDOW 2",
+      "ru": "ОКНО 2"
+    },
+    "details": "90x100, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Resting_Under_the_Birches_3.jpg",
+    "alt": "Resting Under the Birches_3",
+    "name": {
+      "en": "RESTING UNDER THE BIRCHES 3",
+      "ru": "ОТДЫХ ПОД БЕРЕЗАМИ 3"
+    },
+    "details": "80x90, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Resting_Under_the_Birches_4.jpg",
+    "alt": "Resting Under the Birches_4",
+    "name": {
+      "en": "RESTING UNDER THE BIRCHES 4",
+      "ru": "ОТДЫХ ПОД БЕРЕЗАМИ 4"
+    },
+    "details": "55x70, 2009"
+  },
+  {
+    "src": "../assets/images/gallery/Pastoral_on_the_Nerl.jpg",
+    "alt": "Pastoral on the Nerl",
+    "name": {
+      "en": "PASTORAL ON THE NERL",
+      "ru": "ПАСТОРАЛЬ НА НЕРЛИ"
+    },
+    "details": "60x90, 2008"
+  },
+  {
+    "src": "../assets/images/gallery/Landscape_in_September.jpg",
+    "alt": "Landscape in September",
+    "name": {
+      "en": "LANDSCAPE IN SEPTEMBER",
+      "ru": "ПЕЙЗАЖ В СЕНТЯБРЕ"
+    },
+    "details": "80x90, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Regarding_Bogolyubov.jpg",
+    "alt": "Regarding Bogolyubov",
+    "name": {
+      "en": "REGARDING BOGOLYUBOV",
+      "ru": "ПО ПОВОДУ БОГОЛЮБОВА"
+    },
+    "details": "60x70, 2007"
+  },
+  {
+    "src": "../assets/images/gallery/Sunflowers_2.jpg",
+    "alt": "Sunflowers 2",
+    "name": {
+      "en": "SUNFLOWERS 2",
+      "ru": "ПОДСОЛНУХИ 2"
+    },
+    "details": "60x75, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Noon_game.jpg",
+    "alt": "Noon_game",
+    "name": {
+      "en": "NOON GAME",
+      "ru": "ПОЛДЕНЬ, ИГРА"
+    },
+    "details": "76x90, 1999"
+  },
+  {
+    "src": "../assets/images/gallery/Full_moon.jpg",
+    "alt": "Full moon",
+    "name": {
+      "en": "FULL MOON",
+      "ru": "ПОЛНОЛУНИЕ"
+    },
+    "details": "60x80, 2011"
+  },
+  {
+    "src": "../assets/images/gallery/Walking_with_a_black_goat.jpg",
+    "alt": "Прогулка с черной козой",
+    "name": {
+      "en": "Walking_with_a_black_goat",
+      "ru": "ПРОГУЛКА С ЧЕРНОЙ КОЗОЙ"
+    },
+    "details": "60x80, 2011"
   }
+  
+  
   
 ]
