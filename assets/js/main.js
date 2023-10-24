@@ -41,7 +41,7 @@
             figure.className = 'artwork';
 
             const img = document.createElement('img');
-            img.src = painting.src;
+            img.dataset.src = painting.src;
             img.alt = painting.alt;
             img.loading = "lazy";
             img.addEventListener('click', () => openModal(painting.src, painting.name[currentLanguage], painting.details));
@@ -51,6 +51,8 @@
 
             figure.append(img, figcaption);
             gallery.appendChild(figure);
+
+            figure.style.opacity = '0';
 
             img.onload = () => {
                 figcaption.style.width = img.offsetWidth + "px";
@@ -83,12 +85,10 @@
                     img.onclick = () => openModal(photo.src);
 
                     if (window.innerWidth <= 768) {
-                        // If it's a mobile device, add the image to the carousel wrapper
-                        img.className = 'carousel-image'; // Use class for mobile
+                        img.className = 'carousel-image';
                         carouselWrapper.appendChild(img);
                     } else {
-                        // If it's a desktop, add the image to the biography wrapper
-                        img.className = 'biography-image'; // Use class for desktop
+                        img.className = 'biography-image';
                         biographyWrapper.appendChild(img);
                     }
                 });
@@ -141,12 +141,14 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const img = entry.target;
-                    img.nextElementSibling.style.width = img.offsetWidth + "px";
+                    img.src = img.dataset.src;
+                    img.nextElementSibling.style.width = img.offsetWidth + 'px';
                     allImagesLoaded++;
                     if (allImagesLoaded === gallery.children.length) {
-                        gallery.style.visibility = "visible";
-                        gallery.style.opacity = "1";
+                        gallery.style.visibility = 'visible';
+                        gallery.style.opacity = '1';
                     }
+                    entry.target.closest('.artwork').style.opacity = '1';
                 }
             });
         });
@@ -207,9 +209,9 @@
 
         menuButton.addEventListener('click', () => {
             if (menu.classList.contains('active')) {
-                menu.classList.remove('active'); // hide the menu
+                menu.classList.remove('active');
             } else {
-                menu.classList.add('active'); // show the menu
+                menu.classList.add('active');
             }
         });
     });
