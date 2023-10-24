@@ -62,7 +62,9 @@
 
     function loadBiography(lang) {
         const biographyWrapper = document.querySelector('.image-wrapper');
+        const carouselWrapper = document.getElementById('carousel-wrapper');
         biographyWrapper.innerHTML = '';
+        carouselWrapper.innerHTML = '';
 
         fetch(`assets/data/biography_${lang}.html`)
             .then(response => response.text())
@@ -78,23 +80,34 @@
                     img.src = photo.src;
                     img.alt = photo.alt;
                     img.loading = "lazy";
-                    img.className = 'biography-image';
                     img.onclick = () => openModal(photo.src);
-                    biographyWrapper.appendChild(img);
+
+                    if (window.innerWidth <= 768) {
+                        // If it's a mobile device, add the image to the carousel wrapper
+                        img.className = 'carousel-image'; // Use class for mobile
+                        carouselWrapper.appendChild(img);
+                    } else {
+                        // If it's a desktop, add the image to the biography wrapper
+                        img.className = 'biography-image'; // Use class for desktop
+                        biographyWrapper.appendChild(img);
+                    }
                 });
             })
             .catch(error => console.error('Error loading biography photos:', error));
     }
 
+
     function loadLanguage(lang) {
-        fetchJSON(`assets/data/${lang}.json`)
-            .then(data => {
-                applyTranslations(data);
-                setActiveLanguageClass(lang);
-                currentLanguage = lang;
-                return fetchJSON('assets/data/paintings.json');
-            })
-            .then(populateGallery)
+        Promise.all([
+            fetchJSON(`assets/data/${lang}.json`)
+                .then(data => {
+                    applyTranslations(data);
+                    setActiveLanguageClass(lang);
+                    currentLanguage = lang;
+                }),
+            fetchJSON('assets/data/paintings.json')
+                .then(populateGallery)
+        ])
             .then(() => loadBiography(lang))
             .catch(error => console.error('Error:', error));
     }
@@ -102,6 +115,9 @@
     // --------------------- Event Handlers ---------------------
 
     function openModal(src, name = '', details = '') {
+        if (window.innerWidth <= 768) {
+            return;
+        }
         MODAL_IMG.src = src;
         MODAL_INFO.innerHTML = `<strong>${name}</strong><br>${details}`;
         IMAGE_MODAL.style.display = "block";
@@ -162,6 +178,13 @@
                 changeContent(event.target.getAttribute('data-section'));
             }
         });
+        document.getElementById('menu').addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        }, {passive: false});
+
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            this.classList.toggle("opened");
+        });
         document.querySelector('.lang-switcher').addEventListener('click', (event) => {
             event.preventDefault();
             if (event.target.tagName === 'A') {
@@ -178,5 +201,48 @@
                 event.preventDefault();
             }
         });
+
+        const menuButton = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active'); // hide the menu
+            } else {
+                menu.classList.add('active'); // show the menu
+            }
+        });
+    });
+
+    let startX;
+    let isDragging = false;
+    const carouselWrapper = document.getElementById('carousel-wrapper');
+
+    carouselWrapper.addEventListener('touchstart', function (e) {
+        isDragging = true;
+        startX = e.touches[0].clientX;
+    });
+
+    carouselWrapper.addEventListener('touchmove', function (e) {
+        if (!isDragging) return;
+        const x = e.touches[0].clientX;
+        const deltaX = x - startX;
+        this.scrollLeft -= deltaX;
+        startX = x;
+    });
+
+    carouselWrapper.addEventListener('touchend', function () {
+        isDragging = false;
+    });
+
+    carouselWrapper.addEventListener('scroll', function () {
+        const maxScrollLeft = this.scrollWidth - this.clientWidth;
+        if (this.scrollLeft === 0) {
+            this.style.overflowX = 'hidden';
+        } else if (this.scrollLeft === maxScrollLeft) {
+            this.style.overflowX = 'hidden';
+        } else {
+            this.style.overflowX = 'scroll';
+        }
     });
 })();

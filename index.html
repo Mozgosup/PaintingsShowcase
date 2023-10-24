@@ -7,6 +7,9 @@
     <title data-translate-key="title">Lidia Skargina - Featured Artworks</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" sizes="48x48" href="assets/images/favicon/favicon.ico" type="image/x-icon">
     <script src="assets/js/main.js" defer></script>
 </head>
 <body>
@@ -15,10 +18,13 @@
         <div class="header-text" data-translate-key="headerText">LIDIA SKARGINA</div>
     </header>
     <main id="container">
+        <button id="menu-toggle" class="hamburger-button">
+            <div class="hamburger"></div>
+        </button>
         <nav id="menu">
             <ul>
                 <li id="menu-home" class="active-menu-item">
-                    <a href="#" data-section="home" data-translate-key="menuHome">Featured Artworks</a>
+                    <a href="#" data-section="home" data-translate-key="menuHome">Artworks</a>
                 </li>
                 <li id="menu-about">
                     <a href="#" data-section="about" data-translate-key="menuAbout">About Lidia</a>
@@ -39,12 +45,15 @@
             </section>
             <section id="about" class="content-section hidden">
                 <h1 data-translate-key="menuAbout">About Lidia</h1>
+                <div id="carousel-container" class="carousel-container">
+                    <div id="carousel-wrapper" class="carousel-wrapper"></div>
+                </div>
                 <div class="image-wrapper"></div>
                 <div id="biography-container"></div>
             </section>
-            <section id="contact" class="content-section hidden">
+            <section id="contact" class="content-section hidden contact-section">
                 <h1 data-translate-key="menuContact">Contact</h1>
-                <p data-translate-key="contactIntro"></p>
+                <p data-translate-key="contactIntro" class="indented-text"></p>
                 <p><strong><span data-translate-key="contactFacebookLabel">Facebook: </span></strong><a
                         href="https://www.facebook.com/lidia.skargina" target="_blank" rel="noopener noreferrer"
                         data-translate-key="contactFacebookLink"></a></p>

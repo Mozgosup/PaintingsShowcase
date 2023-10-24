@@ -1,8 +1,13 @@
 /* Variables */
 :root {
     --main-font: arial, sans-serif;
-    --main-text-color: #ABB2B9;
+    --gray-color: #ABB2B9;
     --highlight-text-color: #000000;
+    --zindex-header: 1005;
+    --zindex-menu: 1001;
+    --zindex-toggle: 1002;
+    --hamburger-color: #333;
+    --transition-standard: all 0.3s;
 }
 
 /* Basic Resets */
@@ -13,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .content-wrapper {
@@ -30,12 +36,6 @@ body {
     padding: 20px;
 }
 
-#menu {
-    flex: 0 0 200px;
-    border-right: 1px solid var(--main-text-color);
-    padding-top: 70px;
-}
-
 #content {
     flex-grow: 1;
 }
@@ -46,7 +46,8 @@ body {
 
 /* Header */
 #site-header {
-    background: url('/assets/images/gallery/Morning_Idyll.jpeg') center/cover;
+    background: url('/assets/images/gallery/Morning_Idyll.jpeg') center/cover no-repeat;
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
@@ -60,9 +61,34 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 15px;
     font-weight: bold;
+    text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Menu */
+#menu {
+    flex: 0 0 200px;
+    border-right: 1px solid var(--gray-color);
+    padding-top: 70px;
+    top: 150px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #menu ul {
     list-style: none;
     margin: 0;
@@ -77,11 +103,12 @@ body {
     color: black;
     display: block;
     padding: 10px;
-    text-align: right;
     text-decoration: none;
+    text-align: right;
 }
 
-#menu a:hover, .active-menu-item {
+#menu a:hover,
+.active-menu-item {
     text-decoration: underline;
 }
 
@@ -113,7 +140,7 @@ body {
 }
 
 .artwork figcaption {
-    color: var(--main-text-color);
+    color: var(--gray-color);
     font-family: var(--main-font);
     font-size: 80%;
     line-height: 1;
@@ -129,7 +156,7 @@ body {
 }
 
 .artwork p:last-child {
-    color: var(--main-text-color);
+    color: var(--gray-color);
     font-size: 0.8em;
     margin-top: 4px;
 }
@@ -186,9 +213,10 @@ body {
 
 /* Language Switcher */
 .lang-switcher {
+    top: 0;
     position: absolute;
     right: 10px;
-    z-index: 1000;
+    z-index: 1003;
 }
 
 .lang-switcher a {
@@ -240,7 +268,6 @@ body {
 
 #toc ol {
     list-style-type: decimal;
-    padding-left: 550px;
 }
 
 #toc ol li {
@@ -255,4 +282,199 @@ body {
 
 #toc ol li a:hover {
     text-decoration: underline;
+}
+
+.carousel-container {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    .header-text {
+        font-size: 1.5em;
+        letter-spacing: 7px;
+    }
+
+    #site-header {
+        height: 75px;
+        margin-bottom: 0;
+        position: relative;
+        z-index: var(--zindex-header);
+    }
+
+    /* Layout */
+    #container {
+        flex-direction: column;
+    }
+
+    #menu,
+    #content {
+        padding: 0;
+    }
+
+    #content {
+        order: 2;
+    }
+
+    /* Menu */
+    #menu {
+        visibility: hidden;
+        order: 1;
+        margin: 0;
+        padding: 40px 10px 10px;
+        top: 20px;
+        max-height: 0;
+        overflow-y: auto;
+        background-color: white;
+        z-index: var(--zindex-menu);
+    }
+
+    #menu.active {
+        visibility: visible;
+        max-height: 175px;
+    }
+
+    #menu.flex-center {
+        flex-direction: column;
+    }
+
+    #menu a {
+        text-align: center;
+    }
+
+    #menu li {
+        position: relative;
+    }
+
+    #menu li::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 80%;
+        background: linear-gradient(to right, transparent, var(--gray-color), transparent);
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+    }
+
+    #menu li:last-child::after {
+        display: none;
+    }
+
+    /* Menu Toggle */
+    #menu-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        outline: none;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        z-index: var(--zindex-toggle);
+    }
+
+    /* Hamburger Icon */
+    .hamburger {
+        width: 25px;
+        height: 3px;
+        background-color: var(--hamburger-color);
+        position: relative;
+        margin: 0;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: "";
+        background-color: var(--hamburger-color);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        transition: var(--transition-standard);
+    }
+
+    .hamburger::before {
+        top: -8px;
+    }
+
+    .hamburger::after {
+        bottom: -8px;
+    }
+
+    #menu-toggle.opened .hamburger {
+        background-color: transparent;
+    }
+
+    #menu-toggle.opened .hamburger::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    #menu-toggle.opened .hamburger::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+
+    /* Gallery */
+    #gallery {
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: block;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .artwork {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto 16px auto;
+    }
+
+    .artwork img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .biography-image {
+        display: none;
+    }
+
+    .carousel-container {
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+
+    .carousel-wrapper {
+        display: flex;
+        transition: transform 0.1s ease-in-out;
+        overflow-x: scroll;
+    }
+
+    .carousel-image {
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    #about #biography-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .content-section h1 {
+        padding-left: 10px;
+    }
+
+    .contact-section {
+        padding: 0 10px;
+    }
 }
