@@ -266,7 +266,7 @@ body {
 
 #toc ol {
     list-style-type: decimal;
-    padding-left: 550px;
+    /*padding-left: 550px;*/
 }
 
 #toc ol li {
@@ -281,6 +281,10 @@ body {
 
 #toc ol li a:hover {
     text-decoration: underline;
+}
+
+.carousel-container {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -444,5 +448,28 @@ body {
         height: auto;
         max-width: 100%;
         max-height: 100%;
+    }
+
+    .biography-image {
+        display: none;
+    }
+
+    .carousel-container {
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+
+    .carousel-wrapper {
+        display: flex;
+        transition: transform 0.1s ease-in-out;
+        overflow-x: scroll;
+    }
+
+    .carousel-image {
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+        display: block;
     }
 }
