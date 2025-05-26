@@ -1,5 +1,86 @@
 [
   {
+    "src": "../assets/images/gallery/Landscape_with_Red_Clouds.jpeg",
+    "alt": "Landscape with Red Clouds",
+    "name": {
+      "en": "LANDSCAPE WITH RED CLOUDS",
+      "ru": "ПЕЙЗАЖ С КРАСНЫМИ ОБЛАКАМИ"
+    },
+    "details": "60х70, 2025"
+  },
+  {
+    "src": "../assets/images/gallery/Midnight_Rhythms.jpeg",
+    "alt": "Midnight Rhythms",
+    "name": {
+      "en": "MIDNIGHT RHYTHMS",
+      "ru": "ПОЛУНОЧНЫЕ РИТМЫ"
+    },
+    "details": "60x40, 2025"
+  },
+  {
+    "src": "../assets/images/gallery/Black_Cloud.jpeg",
+    "alt": "Black Cloud",
+    "name": {
+      "en": "BLACK CLOUD",
+      "ru": "ЧЁРНОЕ ОБЛАКО"
+    },
+    "details": "40х50, 2020"
+  },
+  {
+    "src": "../assets/images/gallery/Lilac.jpeg",
+    "alt": "Lilac",
+    "name": {
+      "en": "LILAC",
+      "ru": "СИРЕНЬ"
+    },
+    "details": "90х80, 2025"
+  },
+  {
+    "src": "../assets/images/gallery/Lilac_2.jpeg",
+    "alt": "Lilac_2",
+    "name": {
+      "en": "LILAC 2",
+      "ru": "СИРЕНЬ 2"
+    },
+    "details": "90х80, 2025"
+  },
+  {
+    "src": "../assets/images/gallery/Still_Life_with_Watermelon.jpeg",
+    "alt": "Still Life with Watermelon",
+    "name": {
+      "en": "STILL LIFE WITH WATERMELON",
+      "ru": "НАТЮРМОРТ С АРБУЗОМ"
+    },
+    "details": "90х80, 2025"
+  },
+  {
+    "src": "../assets/images/gallery/Evening_Walk.jpeg",
+    "alt": "Evening Walk",
+    "name": {
+      "en": "EVENING WALK",
+      "ru": "ВЕЧЕРНЯЯ ПРОГУЛКА"
+    },
+    "details": "60х40, 2025"
+  },
+  {
+    "src": "../assets/images/gallery/Evening_Lilac.jpeg",
+    "alt": "Evening Lilac",
+    "name": {
+      "en": "EVENING LILAC",
+      "ru": "ВЕЧЕРНЯЯ СИРЕНЬ"
+    },
+    "details": "80х90, 2024"
+  },
+  {
+    "src": "../assets/images/gallery/Still_Life_May_19.jpeg",
+    "alt": "Still Life, May 19",
+    "name": {
+      "en": "STILL LIFE, MAY 19",
+      "ru": "НАТЮРМОРТ 19 МАЯ"
+    },
+    "details": "60х50, 2025"
+  },
+  {
     "src": "../assets/images/gallery/Impromptu_with_Irina.jpeg",
     "alt": "Impromptu with Irina",
     "name": {
