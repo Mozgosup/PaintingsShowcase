@@ -1,4 +1,112 @@
 [
+    {
+      "src": "../assets/images/gallery/Still_Life_with_Red_Chair_2.jpg",
+      "alt": "Still Life with Red Chair 2",
+      "name": {
+        "en": "STILL LIFE WITH RED CHAIR 2",
+        "ru": "НАТЮРМОРТ С КРАСНЫМ СТУЛОМ 2"
+      },
+      "details": "70х80, 2023"
+    },
+    {
+      "src": "../assets/images/gallery/Lilac_3.jpg",
+      "alt": "Lilac_3",
+      "name": {
+        "en": "LILAC 3",
+        "ru": "СИРЕНЬ 3"
+      },
+      "details": "90х80, 2025"
+    },
+    {
+      "src": "../assets/images/gallery/Evening_Birches.jpg",
+      "alt": "Evening Birches",
+      "name": {
+        "en": "EVENING BIRCHES",
+        "ru": "ВЕЧЕР, БЕРЁЗЫ"
+      },
+      "details": "65х71, 2015"
+    },
+    {
+      "src": "../assets/images/gallery/Flute_Solo.jpg",
+      "alt": "Flute Solo",
+      "name": {
+        "en": "FLUTE SOLO",
+        "ru": "СОЛО НА ФЛЕЙТЕ"
+      },
+      "details": "70х50, 1995"
+    },
+    {
+      "src": "../assets/images/gallery/Girls_Party.jpg",
+      "alt": "Girls Party",
+      "name": {
+        "en": "GIRLS PARTY",
+        "ru": "ДЕВИШНИК"
+      },
+      "details": "80х110, 2023"
+    },
+    {
+      "src": "../assets/images/gallery/Study_with_Poppies.jpg",
+      "alt": "Study with Poppies",
+      "name": {
+        "en": "STUDY WITH POPPIES",
+        "ru": "ЭТЮД С МАКАМИ"
+      },
+      "details": "80х90, 2025"
+    },
+    {
+      "src": "../assets/images/gallery/From_Watermelons.jpg",
+      "alt": "From Watermelons",
+      "name": {
+        "en": "FROM WATERMELONS",
+        "ru": "С АРБУЗОВ"
+      },
+      "details": "90х80, 2025"
+    },
+    {
+      "src": "../assets/images/gallery/Evening_Improvisation.jpg",
+      "alt": "Evening Improvisation",
+      "name": {
+        "en": "EVENING IMPROVISATION",
+        "ru": "ВЕЧЕРНИЙ ЭКСПРОМТ"
+      },
+      "details": "80х90, 2025"
+    },
+    {
+      "src": "../assets/images/gallery/White_Cloud_2.jpg",
+      "alt": "White Cloud 2",
+      "name": {
+        "en": "WHITE CLOUD 2",
+        "ru": "БЕЛОЕ ОБЛАКО 2"
+      },
+      "details": "70х70, 2025"
+    },
+    {
+      "src": "../assets/images/gallery/Morning_Idyll.jpg",
+      "alt": "Morning Idyll",
+      "name": {
+        "en": "MORNING IDYLL",
+        "ru": "УТРЕННЯЯ ИДИЛЛИЯ"
+      },
+      "details": "80х90, 2006"
+    },
+    {
+      "src": "../assets/images/gallery/Still_Life_with_a_Pink_Vase.jpg",
+      "alt": "Still Life with Pink Vase",
+      "name": {
+        "en": "STILL LIFE WITH PINK VASE",
+        "ru": "НАТЮРМОРТ С РОЗОВОЙ ВАЗОЙ"
+      },
+      "details": "100х120, 2025"
+    },
+    {
+      "src": "../assets/images/gallery/Dedicated_to_Ivan_Bunin.jpg",
+      "alt": "Dedicated to Ivan Bunin",
+      "name": {
+        "en": "DEDICATED TO IVAN BUNIN",
+        "ru": "ИВАНУ БУНИНУ ПОСВЯЩАЕТСЯ"
+      },
+      "details": "127х78, 2020"
+    },
   {
     "src": "../assets/images/gallery/Landscape_with_Red_Clouds.jpeg",
     "alt": "Landscape with Red Clouds",
@@ -890,7 +998,7 @@
     },
     "details": "60x80, 2011"
   }
-  
-  
-  
+
+
+
 ]
